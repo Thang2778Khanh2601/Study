@@ -1,0 +1,291 @@
+/* reset css */
+* {
+    padding: 0px;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    
+}
+
+#header { 
+    height: 50px;
+    background-color: lightgreen;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
+}
+#nav li:hover .subnav {
+    display: block;
+} 
+
+#nav >li{
+    display: inline-block;
+}
+
+#nav li {
+    /* display: inline-block; */
+    position: relative;
+}
+ 
+ 
+#nav >li >a{
+    padding: 0 25px;
+    line-height: 50px;
+    text-decoration: none;
+    display:  block
+}
+
+#nav .subnav a { 
+    line-height: 30px;
+    text-decoration: none;
+    display:  block
+}
+
+#nav .subnav li:hover,
+#nav > li:hover >a {
+    color: black;
+    background-color: rgb(48, 221, 91);
+    border: 1px dashed black;
+}
+#nav ,.subnav{
+    list-style: none;
+}  
+
+#nav .subnav { 
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    background-color: rgb(129, 241, 157);
+    min-width: 120px;
+};
+
+#header .nav-arround-down {
+    font-size: 12px;
+}
+
+#header .search-btn:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+#header .search-btn {
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#slider { 
+    padding-top: 50%; 
+    background: url(' /assets/img/slider/slider1.jpg') no-repeat center / cover;
+    position: relative;
+}
+#slider .text-content {
+    position: absolute; 
+    left: 0; 
+    bottom: 15px;
+    color:azure;
+/* căn giữa như sau */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+#slider .text-header {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-description {
+    font-size: 16px;
+}
+
+#content {
+    
+}
+
+.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.text-center {
+    align-items: center !important;
+}
+
+#content .section-content {
+    padding:64px 0;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .heading-section {
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 30px; 
+    letter-spacing: 4px;
+}
+#content .sub-heading-section {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    opacity: 60%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+#content .text-about {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Từ khóa important có độ ưu tiên cao nhất */
+.text-white{
+    color: #fff !important;     
+}
+
+#content .member-name {
+    text-align: center;
+    font-size: 15px;
+}
+
+#content .member-list .member-img{
+    width: 160px;
+    height: 236px;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 5px
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+#content .match-section{
+    background: url(/assets/img/place/background.jpg!d) no-repeat center /contain;
+    height: auto;
+}
+
+#content .tickets-list li {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    border-bottom: solid #ddd;
+    padding: 11px 16px;
+}
+
+#content .tickets-list{
+    margin-top: 40px;
+    max-width: 800px;
+    margin: auto;
+    list-style: none;
+}
+
+#content .tickets-list .sold-out {
+    color: #fff;
+    background: #f44336;
+    margin-left: 50px;
+    padding: 6px 6px
+}
+#content .tickets-list .quantity {
+    float:right;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 5px;
+    margin-top: -2px;
+}
+
+#content .heading-section .all-match {
+    margin-bottom: 15px;
+}
+
+/* Place list */
+#content .place-list {
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+#content .place-item {
+    padding: 0px 8px;
+    margin-bottom: 12px;    
+}
+
+#content .place-img {
+    display: block;
+    width: 100%;
+    min-height: 142px;
+}
+
+#content .place-body {
+    background: #fff;
+    color: #000;
+    padding: 16px;
+    font-size: 15px;
+}
+
+#content .place-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#content .place-time {
+    margin-top: 15px;
+    counter: #757575;
+}
+
+#content .place-description {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-body .place-buy-btn {
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    margin-top: 8px;;
+}
+
+
+
+#footer {
+    
+}
+
